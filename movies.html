@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/showsmovies.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Home</title>
+
+    <style>
+        h1 {
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content.active {
+            display: block;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <a href = "#main" class="skip-main" tabindex="0">Skip to Main Content</a>
+    <header>
+        <nav class="animate">
+            <ul class="menu">
+				<li><a href = "homesite.html">Home</a></li>
+                <li><a href = "shows.html">Shows</a></li>
+                <li><a href = "movies.html">Movies</a></li>
+            </ul>
+        </nav>
+        <h1>Movies you should Definitely Watch!</h1>
+    </header>
+
+    <div class="instruction-box">
+        <h2>How to Explore the Movies</h2>
+        <p>Click on any movie box below to reveal more information about the movie. Each box contains a brief synopsis, a link to watch the movie, and a sample video trailer.</p>
+    </div>
+
+<main id="main" class="show-boxes">
+    <div class="show-box" onclick="toggleInfo('dune2-info')">
+        <img src="images/dune2poster.jpeg" alt="Dune Part 2 Movie Poster">
+        <div id="dune2-info" class="show-info">
+            <h3>Dune: Part Two</h3>
+            <a href="https://www.youtube.com/watch?v=Tf1ppIa54Mc">Watch Now</a>
+            <p>Set in the distant future, "Dune Part 2" continues the epic saga of Paul Atreides as he navigates the treacherous politics and mystical forces of the desert planet Arrakis. With the fate of humanity hanging in the balance, Paul must confront his destiny as the prophesied messiah while facing powerful adversaries and uncovering the secrets of the universe.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Way9Dexny3w?si=OErTh3qyZJszmf2u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('barbie-info')">
+        <img src="images/barbieposter.jpg" alt="Barbie Movie Poster">
+        <div id="barbie-info" class="show-info">
+            <h3>Barbie</h3>
+            <a href="https://www.amazon.com/gp/video/detail/B0CB1TMKR6/ref=atv_dp_share_cu_r">Watch Now</a>
+            <p>"Barbie" follows the iconic doll on a whimsical adventure through the vibrant world of Dreamtopia. Joined by her friends, Barbie embarks on a journey filled with magic, friendship, and self-discovery as she learns valuable lessons about courage, kindness, and following your dreams.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pBk4NYhWNMM?si=gJKZtZCIJoEf93TC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('cap-philips-info')">
+        <img src="images/capphilipsposter.jpg" alt="Captain Phillips Movie Poster">
+        <div id="cap-philips-info" class="show-info">
+            <h3>Captain Phillips</h3>
+            <a href="https://www.hulu.com/movie/cce00c3a-558e-40df-997c-38c0797ae841">Watch Now</a>
+            <p>Based on a true story, "Captain Phillips" recounts the harrowing ordeal of Captain Richard Phillips and his crew when their cargo ship is hijacked by Somali pirates. As tensions escalate and lives hang in the balance, Phillips must use all his wits and resourcefulness to survive and protect his crew from the ruthless pirates.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GEyM01dAxp8?si=gOMS5FyJAyjk41y5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('interstellar-info')">
+        <img src="images/interstellarposter.jpg" alt="Insterstellar Movie Poster">
+        <div id="interstellar-info" class="show-info">
+            <h3>Interstellar</h3>
+            <a href="https://www.amazon.com/gp/video/detail/B00TU9UFTS/ref=atv_dp_share_cu_r">Watch Now</a>
+            <p>In a future where Earth is becoming uninhabitable, "Interstellar" follows a team of astronauts who embark on a daring mission through a wormhole in search of a new habitable planet for humanity. As they journey across the cosmos, they must confront the mysteries of space and time while grappling with the personal sacrifices required for the survival of the human race.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Lm8p5rlrSkY?si=Y8VS2dx41xZFSMxm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('johnwick4-info')">
+        <img src="images/johnwick4poster.jpg" alt="John Wick Chapter 4 Movie Poster">
+        <div id="johnwick4-info" class="show-info">
+            <h3>John Wick: Chapter 4</h3>
+            <a href="https://www.amazon.com/gp/video/detail/B0B6QPS7T1/ref=atv_dp_share_cu_r">Watch Now</a>
+            <p>The fourth installment in the action-packed "John Wick" franchise, Chapter 4 continues the story of the legendary hitman as he finds himself on the run from an army of assassins. With enemies closing in from all sides, John Wick must rely on his unparalleled skills and determination to survive and seek vengeance against those who betrayed him.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qEVUtrk8_B4?si=hfbOfZdIXrh2JWJq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('parasite-info')">
+        <img src="images/parasiteposter.jpg" alt="Parasite">
+        <div id="parasite-info" class="show-info">
+            <h3>Parasite</h3>
+            <a href="https://www.amazon.com/gp/video/detail/B07YM22YKW/ref=atv_dp_share_cu_r">Watch Now</a>
+            <p>Winner of multiple Academy Awards including Best Picture, "Parasite" is a darkly comedic thriller that explores the class divide in modern society. When a poor family schemes their way into the lives of a wealthy household, their newfound prosperity quickly unravels into a twisted tale of greed, deception, and unexpected consequences.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5xH0HfJHsaY?si=WemPvcxNaFyQjldb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+</body>

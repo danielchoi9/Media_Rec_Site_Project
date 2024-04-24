@@ -1,0 +1,182 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    width: auto;
+    margin: auto;
+    background: #fff;
+    padding: 5px 0;
+    border-radius: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 5px 80px;
+    text-decoration: none;
+    color: #383838;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+
+  nav.animate ul li a {
+    position: relative;
+  }
+
+  nav.animate ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  nav.animate ul li a:hover:after {
+    width: 100%;
+  }
+
+  a.skip-main {
+    position: fixed;
+    top: -100px;
+    left: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    color: #ff0000;
+    padding: 10px;
+    transition: top 0.5s ease;
+}
+
+a.skip-main:focus {
+    top: 10px;
+}
+
+.instruction-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.instruction-box h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instruction-box p {
+  font-size: 16px;
+  color: #666;
+}
+
+.show-box {
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.show-info {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.samplevid {
+    position: relative;
+    padding-bottom: 56.25%; /* maintaining 16:9 aspect ratio so that I remember what this oddly specific number is for */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.samplevid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.show-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.show-box {
+  width: 400px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.show-box:hover {
+  transform: scale(1.05);
+}
+
+.show-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.show-info h3, .show-info a {
+  text-align: center;
+}
+
+.show-info a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #383838;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.show-info a:hover {
+  color: #ff0000;
+  transform: scale(1.05);
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/showsmovies.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Home</title>
+
+    <style>
+        h1 {
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content.active {
+            display: block;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <a href = "#main" class="skip-main" tabindex="0">Skip to Main Content</a>
+    <header>
+        <nav class="animate">
+            <ul class="menu">
+				<li><a href = "homesite.html">Home</a></li>
+                <li><a href = "shows.html">Shows</a></li>
+                <li><a href = "movies.html">Movies</a></li>
+            </ul>
+        </nav>
+        <h1>Shows you should Definitely Watch!</h1>
+    </header>
+
+    <div class="instruction-box">
+        <h2>How to Explore the Shows</h2>
+        <p>Click on any show box below to reveal more information about the show. Each box contains a brief synopsis, a link to watch the show, and a sample video trailer.</p>
+    </div>
+
+<main id="main" class="show-boxes">
+    <div class="show-box" onclick="toggleInfo('shogun-info')">
+        <img src="images/shogunlogo.jpg" alt="shogun-info">
+        <div id="shogun-info" class="show-info">
+            <h3>Shogun by FX</h3>
+            <a href="https://www.hulu.com/series/5422a5f9-e4f1-475e-9217-65e8249388d0">Watch Now</a>
+            <p>In feudal Japan, an English sailor finds himself shipwrecked and his crew slaughtered. Rescued by a local lord, he is forced to learn the ways of the samurai and navigate the complex political landscape of Japan while trying to find a way back home.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yAN5uspO_hk?si=0noMdDFyYAaT05LB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('theboys-info')">
+        <img src="images/boyslogo.png" alt="Show 2">
+        <div id="theboys-info" class="show-info">
+            <h3>The Boys by Prime Video</h3>
+            <a href="https://www.amazon.com/gp/video/detail/B0875L45GK/ref=atv_dp_share_cu_r">Watch Now</a>
+            <p>In a world where superheroes are revered as celebrities, a group of vigilantes known as "The Boys" embark on a mission to take down corrupt superheroes who abuse their powers and exploit the public. With dark humor and gritty action, the series explores themes of power, corruption, and morality.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F9U-yoJbgWs?si=acUwx9erU9HB2nLW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('bad-batch-info')">
+        <img src="images/badbatchlogo.jpeg" alt="The Bad Batch">
+        <div id="bad-batch-info" class="show-info">
+            <h3>The Bad Batch by Disney+</h3>
+            <a href="https://www.disneyplus.com/browse/entity-c93113fb-94ec-43b6-9d38-308825f7cd94">Watch Now</a>
+            <p>Set in the Star Wars universe, "The Bad Batch" follows a group of genetically enhanced clone troopers who possess unique skills and abilities. After the events of the Clone Wars, they embark on daring missions while navigating the aftermath of the conflict and facing new threats.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Oa5zeHdSwdQ?si=zJBG-z-G1w7wx0XN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('kingdom-info')">
+        <img src="images/kingdomlogo.jpg" alt="Kingdom">
+        <div id="kingdom-info" class="show-info">
+            <h3>Kingdom by Netflix</h3>
+            <a href="https://www.netflix.com/title/80180171">Watch Now</a>
+            <p>In medieval Korea, a mysterious plague breaks out, turning people into flesh-eating monsters. Crown Prince Lee Chang, along with his allies, must uncover the truth behind the outbreak and save his kingdom from both the undead and political intrigue.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4l-yByZpaaM?si=3TS3JaIvNHCQ0Tw_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('invincible-info')">
+        <img src="images/invinciblelogo.png" alt="Invincible">
+        <div id="invincible-info" class="show-info">
+            <h3>Invincible by Prime Video</h3>
+            <a href="https://www.amazon.com/gp/video/detail/B08WJN83XZ/ref=atv_dp_share_cu_r">Watch Now</a>
+            <p>Mark Grayson, a seemingly ordinary teenager, discovers that he is the son of Omni-Man, the world's most powerful superhero. As he inherits his father's abilities, Mark must navigate the complexities of being a superhero while uncovering dark secrets about his family's past.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-bfAVpuko5o?si=vomlpKAoqerRqR9P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="show-box" onclick="toggleInfo('last-kingdom-info')">
+        <img src="images/thelastkingdomlogo.jpg" alt="The Last Kingdom">
+        <div id="last-kingdom-info" class="show-info">
+            <h3>The Last Kingdom by Netflix</h3>
+            <a href="https://www.netflix.com/title/80074249">Watch Now</a>
+            <p>Based on Bernard Cornwell's historical novels, "The Last Kingdom" tells the story of Uhtred of Bebbanburg, a Saxon nobleman who is captured and raised by Vikings. As he navigates the conflicts between Saxons and Danes during the Viking Age, Uhtred seeks to reclaim his birthright and find his true identity.</p>
+            <div class="samplevid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/og5_7KpFtrI?si=7zx4guhjc8rdM5Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+</body>

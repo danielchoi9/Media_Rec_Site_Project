@@ -1,0 +1,193 @@
+body {
+    background-image: linear-gradient(black, rgb(78, 78, 78));
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Nav Link Styling and Animations */
+nav {
+    width: auto;
+    margin: auto;
+    background: #fff;
+    padding: 5px 0;
+    border-radius: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 5px 80px;
+    text-decoration: none;
+    color: #383838;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+
+  nav.animate ul li a {
+    position: relative;
+  }
+
+  nav.animate ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  nav.animate ul li a:hover:after {
+    width: 100%;
+  }
+
+
+/* Skip to Main Content Link Styling */
+  a.skip-main {
+    position: fixed;
+    top: -100px;
+    left: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    color: #ff0000;
+    padding: 10px;
+    transition: top 0.5s ease;
+}
+
+a.skip-main:focus {
+    top: 10px;
+}
+
+/* Introduction/Information Containers */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    height: auto;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-radius: 10px;
+}
+
+.tripleview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.show a, .movie a {
+  display: block;
+  padding: 5px 80px;
+  text-decoration: none;
+  color: #747474;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.show a:hover, .movie a:hover{
+  color: #ff0000;
+  transform: scale(1.05);
+}
+
+.instructions, .show, .movie {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Streaming Services Containers Styling and Animations */
+.streaming {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 10px;
+}
+
+.streamservice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.streambox {
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.streambox img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 80px;
+  transition: transform 0.3s ease;
+}
+
+.streambox p {
+  margin-top: 10px;
+}
+
+.streambox a {
+  display: block;
+  padding: 5px 80px;
+  text-decoration: none;
+  color: #383838;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.streambox a:hover {
+  color: #ff0000;
+  transform: scale(1.05);
+}
+
+.tripleview a {
+  color: #383838;
+}
